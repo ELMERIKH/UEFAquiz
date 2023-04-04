@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="187dp"
+        android:layout_height="78dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="115dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/options_radio_group"
+        android:layout_width="309dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <RadioButton
+            android:id="@+id/option_a"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/option_b"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/option_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioButton
+            android:id="@+id/option_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options_radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/blue"
+        android:text="Submit" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitB"
+        android:backgroundTint="@color/blue"
+        android:layout_marginTop="32dp"
+        android:indeterminate="false" />
+</RelativeLayout>
+
+

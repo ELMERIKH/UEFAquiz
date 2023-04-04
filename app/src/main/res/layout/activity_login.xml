@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    tools:context=".login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="89dp"
+        android:background="@drawable/gradiant_background"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="290dp"
+            android:layout_height="59dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="80dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        android:text="SignIn"
+        app:layout_constraintEnd_toEndOf="@+id/passEdit"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/passEdit"
+        app:layout_constraintTop_toBottomOf="@+id/passEdit" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="286dp"
+        android:ems="10"
+        android:hint="E-mail-ID"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/passEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/emailEdit"
+        app:layout_constraintTop_toBottomOf="@+id/emailEdit"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/signUpB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:text="SignUp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/signInB"
+        app:layout_constraintTop_toBottomOf="@+id/signInB" />
+
+    <RelativeLayout
+        android:id="@+id/gsignB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="244dp"
+            android:layout_height="135dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="72dp"
+            app:srcCompat="@drawable/google" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/on"
+        android:drawable="@drawable/light_effect_on"
+        android:duration="1000"/>
+    <item android:id="@+id/blink"
+        android:drawable="@drawable/light_effect_blink"
+        android:duration="1000"/>
+    <item android:id="@+id/off"
+        android:drawable="@drawable/light_effect_off"
+        android:duration="1000"/>
+</animated-selector>
